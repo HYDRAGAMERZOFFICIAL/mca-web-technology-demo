@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly student portfolio website built with HTML, CSS and JavaScript.">
+  <title>My Web Portfolio | MCA Web Technology</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">Web<span>Lab</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <p class="eyebrow">MCA · WEB TECHNOLOGY DEMO</p>
+      <h1>Hello, I'm <span class="accent">Alex</span>.</h1>
+      <h2>A student learning to build for the web.</h2>
+      <p class="hero-copy">This sample portfolio demonstrates how HTML structures a page, CSS styles it, and JavaScript makes it interactive.</p>
+      <a class="button" href="#about">Explore the page <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Building one line at a time.</h2>
+      </div>
+      <div class="about-card">
+        <p>HTML gives this page its structure. CSS controls the layout, colours and responsive design. JavaScript responds to user actions. Together, these three technologies form the foundation of many websites.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">02 / THE BUILDING BLOCKS</p>
+        <h2>What powers this page?</h2>
+      </div>
+      <div class="cards">
+        <article class="skill-card">
+          <span class="card-number">01</span>
+          <h3>HTML</h3>
+          <p>Defines content and meaning using elements such as headings, paragraphs, links and sections.</p>
+          <code>index.html</code>
+        </article>
+        <article class="skill-card">
+          <span class="card-number">02</span>
+          <h3>CSS</h3>
+          <p>Controls presentation: colours, typography, spacing, layout and mobile responsiveness.</p>
+          <code>style.css</code>
+        </article>
+        <article class="skill-card">
+          <span class="card-number">03</span>
+          <h3>JavaScript</h3>
+          <p>Adds behaviour: events, form validation, DOM updates and interactive features.</p>
+          <code>script.js</code>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container interaction" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">03 / TRY JAVASCRIPT</p>
+        <h2>Make the page respond.</h2>
+      </div>
+      <div class="demo-panel">
+        <label for="studentName">Enter your name</label>
+        <div class="form-row">
+          <input id="studentName" type="text" placeholder="e.g. Priya" autocomplete="given-name">
+          <button class="button" id="greetButton" type="button">Say hello</button>
+        </div>
+        <p class="feedback" id="greeting" aria-live="polite">Your JavaScript greeting will appear here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Built for learning · MCA Web Technology</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
